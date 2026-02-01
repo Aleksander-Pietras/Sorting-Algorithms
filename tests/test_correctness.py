@@ -13,8 +13,15 @@ Correctness tests:
 - Duplicates
 - Large list
 '''
+import pytest
 
-def test_empty_list(function: function):
-    pass
+from algorithms.bubble_sort import bubble_sort
+from algorithms.merge_sort import merge_sort
 
-test_empty_list()
+@pytest.fixture(params=[bubble_sort, merge_sort])
+def sort_function(request):
+    return request.param
+
+def test_empty_list(sort_function):
+    with pytest.raises(TypeError, match="Input unsorted list cannot be empty"):
+        sort_function([])
