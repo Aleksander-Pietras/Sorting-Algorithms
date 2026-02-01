@@ -1,18 +1,15 @@
-'''
-The functions are used to test the algorithms
-- This file does not generate the lists, lists are generated at data_generation/generators.py
+"""
+Logic tests for sorting algorithm correctness.
 
-Correctness tests:
-- Empty list
-- One element
-- Already sorted
-- Reverse sorted
-- All elements equal
-- Random integers
-- Negative numbers
-- Duplicates
-- Large list
-'''
+This module validates that sorting implementations handle various edge cases 
+and standard datasets. Test data is sourced from `data_generation.generators`.
+
+Test Scenarios:
+    - Boundary Cases: Empty lists, single elements.
+    - Sorted States: Already sorted, reverse sorted, all elements equal.
+    - Data Varieties: Random integers, negative numbers, and duplicates.
+    - Stress Testing: Large datasets for stability checks.
+"""
 import pytest
 
 from algorithms.bubble_sort import bubble_sort
