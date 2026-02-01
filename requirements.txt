@@ -1,0 +1,5 @@
+# install these libaries before running the code
+
+# To insall:
+# pip install -r requirements.txt
+pytest
