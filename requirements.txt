@@ -3,3 +3,4 @@
 # To insall:
 # pip install -r requirements.txt
 pytest
+pytest-mock
