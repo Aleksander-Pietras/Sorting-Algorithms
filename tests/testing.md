@@ -35,3 +35,8 @@ Algorithms which passed the tests:
 - [ ] Insertion sort
 - [ ] Merge sort
 - [ ] Quick sort
+
+## How to run
+```cd tests```
+
+```python -m pytest test_correctness.py```
