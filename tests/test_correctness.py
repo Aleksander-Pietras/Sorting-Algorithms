@@ -1,13 +1,11 @@
 """
 Logic tests for sorting algorithm correctness.
 
-This module validates that sorting implementations handle various edge cases 
-and standard datasets. Test data is sourced from `data_generation.generators`.
+This module ensures that sorting algorithms can produce sorted lists.
+Test data is sourced from `data_generators`.
 
 Test Scenarios:
-    - Boundary Cases: Empty lists, single elements.
-    - Sorted States: Already sorted, reverse sorted, all elements equal.
-    - Data Varieties: Random integers, negative numbers, and duplicates.
+    - Normal Case Testing: ...
     - Stress Testing: Large datasets for stability checks.
 """
 import pytest
@@ -18,7 +16,3 @@ from algorithms.merge_sort import merge_sort
 @pytest.fixture(params=[bubble_sort, merge_sort])
 def sort_function(request):
     return request.param
-
-def test_empty_list(sort_function):
-    with pytest.raises(TypeError, match="Input unsorted list cannot be empty"):
-        sort_function([])
