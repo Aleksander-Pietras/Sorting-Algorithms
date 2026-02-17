@@ -9,11 +9,7 @@ def generate_sorted_array(array_size):
     
     returns: sorted_array
     """
-    sorted_array = []
-    for num in range(1, array_size + 1):
-        sorted_array.append(num)
-
-    return sorted_array
+    return list(range(1, array_size + 1))
 
 
 if __name__ == "__main__":
