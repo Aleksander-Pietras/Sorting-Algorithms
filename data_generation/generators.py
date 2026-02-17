@@ -40,6 +40,18 @@ def generate_unsorted_array_(array_size: int) -> list[int]:
     random.shuffle(array)
     return array
 
+def fetch_arrays_for_testing(array_size: int):
+    """
+    Fetches sorted array and unsorted array, respectfully. Returns 2 items.
+    
+    :param array_size: The max value in the array. Also determines the length of the array
+    :type array_size: int
+    """
+    sorted_array = generate_sorted_array(array_size)
+    unsorted_array = generate_unsorted_array_efficiently(sorted_array)
+
+    return sorted_array, unsorted_array
+
 if __name__ == "__main__":
-    test = generate_sorted_array(100)
+    test = fetch_arrays_for_testing(100)
     print(test)
