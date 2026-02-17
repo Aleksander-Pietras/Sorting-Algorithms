@@ -5,7 +5,7 @@ Docstring for data_generation.generators
 def generate_sorted_array(array_size):
     """
     Creates an SORTED array of a size: array_size
-    - unsorted array has all elements 1 -> array_size (inclusive)
+    - sorted array has all elements 1 -> array_size (inclusive)
     
     returns: sorted_array
     """
