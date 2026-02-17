@@ -48,7 +48,8 @@ def fetch_arrays_for_testing(array_size: int):
     :type array_size: int
     """
     sorted_array = generate_sorted_array(array_size)
-    unsorted_array = generate_unsorted_array_efficiently(sorted_array)
+    unsorted_array = sorted_array.copy() # shuffle works in place
+    unsorted_array = generate_unsorted_array_efficiently(unsorted_array)
 
     return sorted_array, unsorted_array
 
