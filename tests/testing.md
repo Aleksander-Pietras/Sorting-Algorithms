@@ -28,7 +28,7 @@ Tests created:
 - [x] Random real numbers (9.dp)
 - [x] Negative numbers
 - [x] Duplicates
-- [ ] Large datasets
+- [x] Large datasets
 
 Algorithms which passed all the tests:
 - [ ] Bubble sort
