@@ -20,23 +20,21 @@ Test Scenarios:
 
 Tests created:
 - [x] Empty lists
-- [ ] Single elemtents
-- [ ] Already sorted
-- [ ] Reverse sorted
-- [ ] All elements equal
-- [ ] Random integers
-- [ ] Random real numbers (9.dp)
-- [ ] Negative numbers
-- [ ] Duplicates
+- [x] Single elemtents
+- [x] Already sorted
+- [x] Reverse sorted
+- [x] All elements equal
+- [x] Random integers
+- [x] Random real numbers (9.dp)
+- [x] Negative numbers
+- [x] Duplicates
 - [ ] Large datasets
 
-Algorithms which passed the tests:
+Algorithms which passed all the tests:
 - [ ] Bubble sort
 - [ ] Insertion sort
 - [ ] Merge sort
 - [ ] Quick sort
 
 ## How to run
-```cd tests```
-
-```python -m pytest test_correctness.py```
+```python -m pytest tests/test_edge_cases.py```
