@@ -38,3 +38,5 @@ Algorithms which passed all the tests:
 
 ## How to run
 ```python -m pytest tests/test_edge_cases.py```
+
+```python -m pytest tests/test_correctness.py```
