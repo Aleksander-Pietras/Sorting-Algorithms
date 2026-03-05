@@ -7,7 +7,7 @@ and standard datasets.
 Test Scenarios:
     - Boundary Cases: Empty lists, single elements.
     - Sorted States: Already sorted, reverse sorted, all elements equal.
-    - Data Varieties: Random integers, negative numbers, and duplicates.
+    - Data Varieties: Random integers, real numbers, negative numbers, and duplicates.
 """
 import pytest
 
@@ -18,12 +18,14 @@ from algorithms.merge_sort import merge_sort
 def sort_function(request):
     return request.param
 
+# Boundry Cases
 def test_empty_list(sort_function):
     assert sort_function([]) == []
 
 def test_single_input(sort_function):
     assert sort_function([1]) == [1]
 
+# Sorted States
 def test_already_sorted(sort_function):
     sorted_array = [1, 2, 3, 4, 5, 6]
     assert sort_function(sorted_array) == sorted_array
@@ -44,6 +46,7 @@ def test_equal_elements(sort_function):
     array2 = [2, 2, 2, 2, 2, 2]
     assert sort_function(array2) == array2
 
+# Data Varieties
 def test_random_integers(sort_function):
     sorted_array = [-124, -77, 7, 15, 20, 88, 234, 301, 6000]
     unsorted_array = [234, 7, -77, 6000, 20, -124, 15, 301, 88]
